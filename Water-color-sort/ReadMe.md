@@ -47,157 +47,53 @@ The WaterSortPuzzleEnv class has different methods to make the game work:
 
 ## Results
 
-### Experiment 1
-initial state [2 3 3 1 1 3 2 1 2 0 0 0 0 0 0]
-step0
-Invalid action: 5
-reward: -1
-total_reward: -1
-Current state: [2 3 3 1 1 3 2 1 2 0 0 0 0 0 0]
-step1
-reward: -1
-total_reward: -2
-Current state: [2 3 3 1 1 3 2 1 0 0 0 0 2 0 0]
-step2
-reward: -1
-total_reward: -3
-Current state: [2 3 3 1 1 0 2 1 0 3 0 0 2 0 0]
-step3
-reward: 10
-total_reward: 7
-Current state: [2 3 3 1 1 1 2 0 0 3 0 0 2 0 0]
-step4
-Invalid action: 2
-reward: -1
-total_reward: 6
-Current state: [2 3 3 1 1 1 2 0 0 3 0 0 2 0 0]
-step5
-Invalid action: 15
-reward: -1
-total_reward: 5
-Current state: [2 3 3 1 1 1 2 0 0 3 0 0 2 0 0]
-step6
-reward: -1
-total_reward: 4
-Current state: [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]
-step7
-Invalid action: 7
-reward: -1
-total_reward: 3
-Current state: [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]
-step8
-Invalid action: 11
-reward: -1
-total_reward: 2
-Current state: [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]
-step9
-Invalid action: 1
-reward: -1
-total_reward: 1
-Current state: [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]
-step10
-Invalid action: 11
-reward: -1
-total_reward: 0
-Current state: [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]
-step11
-reward: -1
-total_reward: -1
-Current state: [2 3 0 1 1 1 3 0 0 3 0 0 2 2 0]
-step12
-reward: -1
-total_reward: -2
-Current state: [2 3 0 1 1 1 0 0 0 3 3 0 2 2 0]
-step13
-reward: -1
-total_reward: -3
-Current state: [2 0 0 1 1 1 3 0 0 3 3 0 2 2 0]
-step14
-Invalid action: 10
-reward: -1
-total_reward: -4
-Current state: [2 0 0 1 1 1 3 0 0 3 3 0 2 2 0]
-step15
-reward: 10
-total_reward: 6
-Current state: [0 0 0 1 1 1 3 0 0 3 3 0 2 2 2]
-step16
-reward: 10
-total_reward: 16
-Current state: [0 0 0 1 1 1 0 0 0 3 3 3 2 2 2]
+## Experiment 1
+
+**Initial State:** [2 3 3 1 1 3 2 1 2 0 0 0 0 0 0]
+
+| Step  | Action | Reward     | Total Reward      | Current Reward                                |
+|-------|--------|------------|-------------------|-----------------------------------------------|
+| 0     | -      | -          | -                 | [2 3 3 1 1 3 2 1 2 0 0 0 0 0 0]               |
+| 1     | 5      | -1         | -1                | [2 3 3 1 1 3 2 1 0 0 0 0 2 0 0]               |
+| 2     | -      | -1         | -2                | [2 3 3 1 1 0 2 1 0 3 0 0 2 0 0]               |
+| 3     | -      | 10         | 7                 | [2 3 3 1 1 1 2 0 0 3 0 0 2 0 0]               |
+| 4     | 2      | -1         | 6                 | [2 3 3 1 1 1 2 0 0 3 0 0 2 0 0]               |
+| 5     | 15     | -1         | 5                 | [2 3 3 1 1 1 2 0 0 3 0 0 2 0 0]               |
+| 6     | -      | -1         | 4                 | [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]               |
+| 7     | 7      | -1         | 3                 | [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]               |
+| 8     | 11     | -1         | 2                 | [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]               |
+| 9     | 1      | -1         | 1                 | [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]               |
+| 10    | 11     | -1         | 0                 | [2 3 3 1 1 1 0 0 0 3 0 0 2 2 0]               |
+| 11    | -      | -1         | -1                | [2 3 0 1 1 1 3 0 0 3 0 0 2 2 0]               |
+| 12    | -      | -1         | -2                | [2 3 0 1 1 1 0 0 0 3 3 0 2 2 0]               |
+| 13    | -      | -1         | -3                | [2 0 0 1 1 1 3 0 0 3 3 0 2 2 0]               |
+| 14    | 10     | -1         | -4                | [2 0 0 1 1 1 3 0 0 3 3 0 2 2 0]               |
+| 15    | 6      | 10         | 6                 | [0 0 0 1 1 1 3 0 0 3 3 0 2 2 2]               |
+| 16    | 10     | -1         | -4                | [0 0 0 1 1 1 0 0 0 3 3 3 2 2 2]               |
+
+
+
 
 ### Experiment 2
 
-initial state [2 1 1 3 2 3 1 3 2 0 0 0 0 0 0]
-step0
-reward: -1
-total_reward: -1
-Current state: [2 1 1 3 2 3 1 3 0 2 0 0 0 0 0]
-step1
-Invalid action: 2
-reward: -1
-total_reward: -2
-Current state: [2 1 1 3 2 3 1 3 0 2 0 0 0 0 0]
-step2
-reward: -1
-total_reward: -3
-Current state: [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]
-step3
-Invalid action: 19
-reward: -1
-total_reward: -4
-Current state: [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]
-step4
-Invalid action: 6
-reward: -1
-total_reward: -5
-Current state: [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]
-step5
-Invalid action: 1
-reward: -1
-total_reward: -6
-Current state: [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]
-step6
-Invalid action: 19
-reward: -1
-total_reward: -7
-Current state: [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]
-step7
-Invalid action: 19
-reward: -1
-total_reward: -8
-Current state: [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]
-step8
-reward: -1
-total_reward: -9
-Current state: [2 1 1 3 2 0 1 0 0 2 0 0 3 3 0]
-step9
-Invalid action: 11
-reward: -1
-total_reward: -10
-Current state: [2 1 1 3 2 0 1 0 0 2 0 0 3 3 0]
-step10
-reward: -1
-total_reward: -11
-Current state: [2 1 1 3 0 0 1 0 0 2 2 0 3 3 0]
-step11
-reward: 10
-total_reward: -1
-Current state: [2 1 1 0 0 0 1 0 0 2 2 0 3 3 3]
-step12
-reward: -1
-total_reward: -2
-Current state: [2 1 0 0 0 0 1 1 0 2 2 0 3 3 3]
-step13
-Invalid action: 10
-reward: -1
-total_reward: -3
-Current state: [2 1 0 0 0 0 1 1 0 2 2 0 3 3 3]
-step14
-reward: 10
-total_reward: 7
-Current state: [2 0 0 0 0 0 1 1 1 2 2 0 3 3 3]
-step15
-reward: 10
-total_reward: 17
-Current state: [0 0 0 0 0 0 1 1 1 2 2 2 3 3 3]
+## Initial State: [2 1 1 3 2 3 1 3 2 0 0 0 0 0 0]
+
+| Step | Action | Reward | Total Reward | Current State                                |
+|------|--------|--------|--------------|----------------------------------------------|
+| 0    | -      | -      | -            | [2 1 1 3 2 3 1 3 0 2 0 0 0 0 0]              |
+| 1    | 2      | -1     | -1           | [2 1 1 3 2 3 1 3 0 2 0 0 0 0 0]              |
+| 2    | -      | -1     | -2           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 3    | 19     | -1     | -3           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 4    | 6      | -1     | -4           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 5    | 1      | -1     | -5           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 6    | 19     | -1     | -6           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 7    | 19     | -1     | -7           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 8    | -      | -1     | -8           | [2 1 1 3 2 3 1 0 0 2 0 0 3 0 0]              |
+| 9    | 11     | -1     | -9           | [2 1 1 3 2 0 1 0 0 2 0 0 3 3 0]              |
+| 10   | -      | -1     | -10          | [2 1 1 3 2 0 1 0 0 2 0 0 3 3 0]              |
+| 11   | 10     | 10     | -1           | [2 1 1 0 0 0 1 0 0 2 2 0 3 3 3]              |
+| 12   | -      | -1     | -2           | [2 1 0 0 0 0 1 1 0 2 2 0 3 3 3]              |
+| 13   | 10     | -1     | -3           | [2 1 0 0 0 0 1 1 0 2 2 0 3 3 3]              |
+| 14   | 7      | 10     | 7            | [2 0 0 0 0 0 1 1 1 2 2 0 3 3 3]              |
+| 15   | 17     | 10     | 17           | [0 0 0 0 0 0 1 1 1 2 2 2 3 3 3]              |
+
